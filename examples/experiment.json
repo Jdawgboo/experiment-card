@@ -1,0 +1,10 @@
+{
+  "run": {"name": "baseline-resnet", "timestamp": "2026-09-11T18:00:00Z", "revision": "abc123"},
+  "dataset": {"name": "synthetic-demo", "version": "1", "split": "fixed seeded split", "provenance": "generated for smoke testing"},
+  "model": {"name": "tiny-cnn", "configuration": "channels=16; epochs=2"},
+  "seed": 7,
+  "metrics": {"accuracy": 0.75, "f1_macro": 0.68},
+  "artifacts": {"metrics_json": "artifacts/metrics.json", "checkpoint": "artifacts/model.pt"},
+  "claims": [{"scope": "synthetic", "text": "The training pipeline completed on the smoke-test fixture.", "evidence": ["artifacts/metrics.json"]}],
+  "limitations": ["Synthetic data does not establish benchmark or production performance."]
+}
